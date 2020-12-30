@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div>
         <figure>
             <img src="https://cdn.pixabay.com/photo/2016/01/21/21/23/rose-1154830_960_720.png" width="150" height="auto" alt="Logo de Personal Blog 2">
@@ -16,47 +16,49 @@
         <nav>
             <ol>
                 <li>
-                    <a href="#">Portafolio</a>
+                    <a href="#portafolio">Portafolio</a>
                 </li>
                 <li>
-                    <a href="#">Experiencia</a>
+                    <a href="#experiencia">Experiencia</a>
                 </li>
                 <li>
-                    <a href="#">Trabajemos juntos</a>
+                    <a href="#contacto">Trabajemos juntos</a>
                 </li>
             </ol>
         </nav>
         </div>
     </header>
-    <main>
-        <section>
+    <main class="main">
+        <section class="hero">
             <p>Hola! Soy <strong>César Almeida</strong>,<br><strong>Ingeniero Frontend</strong><br>y con <strong>pasión</strong> por el <strong>diseño</strong><br>y la <strong>tecnología</strong></p>
             <img src="https://cdn.pixabay.com/photo/2019/11/05/17/56/employee-4604126_960_720.jpg" width="640" height="auto" alt="Imagen de portada">
         </section>
-        <section>
+        <section class="portfolio" id="portafolio">
             <h2>Portafolio</h2>
-            <article>
-                <h3>Bata Bit</h3>
-                <h4>HTML / CSS</h4>
-                <p><small><strong>Fecha:</strong> 29/12/2020</small></p>
-                <p><small><strong>Puedes verlo en:</strong> google.com</small></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis vitae ipsum sit ut cum iste a blanditiis vel. Odit totam, doloribus temporibus distinctio amet nihil aut veritatis rerum non explicabo!</p>
-                <img src="https://raw.githubusercontent.com/cesaralmeidareyes/batatabit/master/assets/imgs/bitcoinbaby.jpg" width="300" height="auto" alt="Imagen de mujer con monedas Bitcoin en los ojos">
-            </article>
-        </section>
-        <section>
-            <h2>Más sobre mi experiencia</h2>
-            <article>
-                <figure>
-                    <img src="https://cdn.pixabay.com/photo/2016/09/17/21/47/audience-1677028_960_720.jpg" width="300" height="auto" alt="">
+            <article class="projects">
+                <h3 class="projects-title">Bata Bit</h3>
+                <h4 class="projects-course">HTML / CSS</h4>
+                <p class="project-date"><small><strong>Fecha:</strong> 29/12/2020</small></p>
+                <p class="project-url"><small><strong>Puedes verlo en:</strong> google.com</small></p>
+                <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis vitae ipsum sit ut cum iste a blanditiis vel. Odit totam, doloribus temporibus distinctio amet nihil aut veritatis rerum non explicabo!</p>
+                <figure class="project-img-container">
+                    <img class="project-img" src="https://raw.githubusercontent.com/cesaralmeidareyes/batatabit/master/assets/imgs/bitcoinbaby.jpg" width="300" height="auto" alt="Imagen de mujer con monedas Bitcoin en los ojos">                    
                 </figure>
-                <h3>TED Madrid 2020</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tenetur vel cumque earum natus expedita, repudiandae odio recusandae quas aliquam quaerat error harum, quae dolorem, hic soluta excepturi eum labore!</p>
-                <a href="">Ver en Youtube</a>
             </article>
         </section>
-        <section>
-            <form action="#">
+        <section class="experience" id="experiencia">
+            <h2>Más sobre mi experiencia</h2>
+            <article class="event">
+                <figure class="event-img-container">
+                    <img class="event-img" src="https://cdn.pixabay.com/photo/2016/09/17/21/47/audience-1677028_960_720.jpg" width="300" height="auto" alt="">
+                </figure>
+                <h3 class="event-title">TED Madrid 2020</h3>
+                <p class="event-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tenetur vel cumque earum natus expedita, repudiandae odio recusandae quas aliquam quaerat error harum, quae dolorem, hic soluta excepturi eum labore!</p>
+                <a class="event-url" href="https://www.youtube.com/watch?v=AEGEjJcPxaU">Ver en Youtube</a>
+            </article>
+        </section>
+        <section class="contact" id="contacto">
+            <form action="#" class="form-email">
                 <h3>¿Creamos algo juntos?</h3>
                 <label for="email-id">
                     <span>Déjame tu email</span>
@@ -66,7 +68,7 @@
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         Footer
     </footer>
 </body>
