@@ -1,3 +1,11 @@
+:root {
+    /* Colors */
+    --dark-grey: #1d252c;
+    --soft-grey: #626262;
+    --light-grey: #1b2127;
+    --blue: #026fff;
+    --background-grey: #fafafa;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +15,7 @@ html {
     font-size: 62.5%;
 }
 body {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family: 'Source Sans Pro', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -16,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
     /* font-style: italic; */
 }
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.5;
     letter-spacing: -.2px;
     color: white;
@@ -25,37 +33,78 @@ h1 {
 }
 /* header */
 .header {
-    background-color: #1b2127;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: var(--light-grey);
     color: white;
 }
 .header a {
+    padding: 0 10px;
     color: white;
     text-decoration: none;
     list-style: none;
 }
+.header ol li {
+    list-style: none;
+}
+.header ol {
+    display: flex;
+}
 /* hero */
 .hero {
+    display: flex;
     height: 300px;
-    background-image: url('https://cdn.pixabay.com/photo/2016/04/01/09/22/asian-1299320_960_720.png');
+    align-items: center;
+    background-image: url('https://cdn.pixabay.com/photo/2014/04/09/17/48/man-320276_960_720.png');
     /* background-size: 500px 300px; */
-    background-size: 200px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: top right;
-    background-color: #1b2127;
+    background-color: var(--light-grey);
 }
 .hero h1 strong {
-    color: #026fff;
+    color: var(--blue);
+}
+/* portfolio */
+.portfolio {
+    background: var(--background-grey);
 }
 .project {
     /* propiedades de border */
     /* border-width: 15px;
     border-style: solid;
     border-color: black; */
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
     border: 1px solid grey;
+    border-radius: 10px;
 }
 .project-details {
     width: 500px;
 }
 .project-imgContainer {
     width: 500px;
+}
+.footer {
+    height: 90px;
+    color: white;
+    background: var(--light-grey);
+}
+.footer div {    
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer div a {
+    /* color: var(--blue); */
+    color: white;
+    text-decoration: none;
+}
+.footer div img {
+    vertical-align: middle;
 }
