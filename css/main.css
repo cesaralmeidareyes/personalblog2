@@ -46,6 +46,13 @@ h1 {
 .hero h1 strong {
     color: #026fff;
 }
+.project {
+    /* propiedades de border */
+    /* border-width: 15px;
+    border-style: solid;
+    border-color: black; */
+    border: 1px solid grey;
+}
 .project-details {
     width: 500px;
 }
