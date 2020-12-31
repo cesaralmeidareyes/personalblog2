@@ -31,6 +31,12 @@ h1 {
     /* text-transform: uppercase; */
     /* text-decoration: dashed; */
 }
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--blue);
+}
 /* header */
 .header {
     display: flex;
@@ -64,14 +70,22 @@ h1 {
     background-position: top right;
     background-color: var(--light-grey);
 }
+.hero h1 {
+    font-size: 4rem;
+}
 .hero h1 strong {
     color: var(--blue);
 }
 /* portfolio */
 .portfolio {
+    padding: 20px;
     background: var(--background-grey);
 }
+.portfolio h2 {
+    margin-bottom: 20px;
+}
 .project {
+    display: flex;
     /* propiedades de border */
     /* border-width: 15px;
     border-style: solid;
@@ -79,15 +93,37 @@ h1 {
     margin: 10px;
     margin-bottom: 15px;
     padding: 20px;
+    justify-content: space-between;
+    align-items: center;
     background: white;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     border-radius: 10px;
+    box-shadow: 1px 1px 2px var(--soft-grey);
 }
 .project-details {
     width: 500px;
+    padding-right: 10px;
+}
+.project-title {
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+.project-course, .project-date, .project-url {
+    margin-bottom: 10px;
+}
+.project-description {
+    font-size: 2rem;
 }
 .project-imgContainer {
     width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.project-imgContainer img{
+    vertical-align: top;
+}
+.project strong {
+    font-family: 'Fjalla One', sans-serif;
 }
 .footer {
     height: 90px;
