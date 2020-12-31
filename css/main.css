@@ -38,14 +38,31 @@ h2 {
     text-transform: uppercase;
     color: var(--blue);
 }
+.wrapper {
+    display: flex;
+    width: 900px;
+    flex-direction: column;
+    margin: 0 auto;
+}
 /* header */
 .header {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     height: 90px;
     background-color: var(--light-grey);
     color: white;
+}
+.header-container {
+    display: flex;
+    width: 900px;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    display: inline;
 }
 .header a {
     padding: 0 10px;
@@ -59,10 +76,12 @@ h2 {
 .header ol {
     display: flex;
 }
+/* main */
 /* hero */
 .hero {
     display: flex;
     height: 300px;
+    padding: 0 15px;
     align-items: center;
     background-image: url('https://cdn.pixabay.com/photo/2014/04/09/17/48/man-320276_960_720.png');
     /* background-size: 500px 300px; */
@@ -127,11 +146,20 @@ h2 {
     font-family: 'Fjalla One', sans-serif;
 }
 /* events */
+.experiencia {
+    /* justify-content: center; */
+}
+.event-lista {
+    display: flex;
+    flex-wrap: wrap;
+}
 .events {
     padding: 20px;
+    margin: 0 auto;
 }
 .event {
-    width: 480px;
+    display: inline-block;
+    width: 300px;
     margin: 10px;
     background: var(--background-blue);
     /* border: 1px solid var(--dark-grey); */
@@ -167,11 +195,19 @@ h2 {
     .contact {
         display: flex;
         width: 100%;
-        height: 150px;padding: 20px;
+        height: 250px;
         justify-content: space-between;
         align-items: center;
         color: white;
         background: var(--blue);
+    }
+    .wrapper-contact {
+        display: flex;
+        width: 900px;
+        height: 100%;
+        margin: 0 auto;
+        justify-content: space-around;
+        align-items: center;
     }
     .social { 
     }
@@ -215,6 +251,11 @@ h2 {
     height: 90px;
     color: white;
     background: var(--light-grey);
+}
+.footer-wrapper {
+    width: 900px;
+    height: 100%;
+    margin: 0 auto
 }
 .footer div {    
     display: flex;
