@@ -163,6 +163,53 @@ h2 {
     border-radius: 5px;
     text-decoration: none;
 }
+/* contact */
+    .contact {
+        display: flex;
+        width: 100%;
+        height: 150px;padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        background: var(--blue);
+    }
+    .social { 
+    }
+    .social-link {
+        display: inline-block;
+        padding: 10px;
+        font-size: 3rem;
+        color: white;
+    }
+    .form-email h3 {
+       text-transform: uppercase;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+    }
+    .form-email .email-text {
+        margin-right: 10px;
+    }
+    .form-email .email-box{
+        margin-top: 10px;
+        padding: 5px 20px;
+        padding-left: 40px;
+        border-radius: 5px;
+        border: 1px solid var(--soft-grey);        
+        background-image: url('https://cdn.pixabay.com/photo/2013/07/13/11/30/envelope-158279_960_720.png');
+        background-size: 20px;
+        background-position: 10px 5px;
+        background-repeat: no-repeat;
+    }
+    .form-email .email-button {
+        display: block;
+        width: 100px;
+        height: 30px;
+        margin-top: 10px;
+        color: white;
+        border: 1px solid;
+        border-radius: 5px;        
+        background-color: transparent;
+    }
 /* footer */
 .footer {
     height: 90px;
