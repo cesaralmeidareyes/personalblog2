@@ -4,7 +4,7 @@
     --soft-grey: #626262;
     --light-grey: #1b2127;
     --blue: #026fff;
-    --background-grey: #fafafa;
+    --background-blue: #fafafa;
 }
 * {
     box-sizing: border-box;
@@ -32,6 +32,7 @@ h1 {
     /* text-decoration: dashed; */
 }
 h2 {
+    padding-left: 10px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -79,7 +80,7 @@ h2 {
 /* portfolio */
 .portfolio {
     padding: 20px;
-    background: var(--background-grey);
+    background: var(--background-blue);
 }
 .portfolio h2 {
     margin-bottom: 20px;
@@ -98,7 +99,7 @@ h2 {
     background: white;
     /* border: 1px solid grey; */
     border-radius: 10px;
-    box-shadow: 1px 1px 2px var(--soft-grey);
+    box-shadow: 0 0 2px var(--soft-grey);
 }
 .project-details {
     width: 500px;
@@ -125,6 +126,44 @@ h2 {
 .project strong {
     font-family: 'Fjalla One', sans-serif;
 }
+/* events */
+.events {
+    padding: 20px;
+}
+.event {
+    width: 480px;
+    margin: 10px;
+    background: var(--background-blue);
+    /* border: 1px solid var(--dark-grey); */
+    box-shadow: 0 0 2px var(--soft-grey);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.event img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+.event-detail {
+    position: relative;
+    margin: 20px 40px;
+    margin-top: -40px;
+    padding: 20px;
+    background: white;
+}
+.event-description {
+    text-align: left;
+}
+.event-url {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 20px;
+    color: var(--blue);
+    border: 1px solid;
+    border-radius: 5px;
+    text-decoration: none;
+}
+/* footer */
 .footer {
     height: 90px;
     color: white;
